@@ -1,20 +1,15 @@
 #sudoku-board td {
-    width: 40px; /* You can adjust this value as needed */
-    height: 40px; /* You can adjust this value as needed */
+    width: 60px; /* You can adjust this value as needed */
+    height: 60px; /* You can adjust this value as needed */
     text-align: center;
-    border: 2px solid #000;
+    border: .5px solid black;;
 }
-
-h1, h6{
-    color: blue;
-}
-
 
 .sudoku-input {
     width: 100%;
     height: 100%;
     font-size: 16px; /* You can adjust this value as needed */
-    border: none;
+    border: 3px;
     text-align: center;
     background-color: white; /* Clear any background color */
 }
@@ -26,22 +21,207 @@ h1, h6{
 
 
 #sudoku-board tr:nth-child(3n + 1) td {
-    border-top: 4px solid #000;
+    border-top: 3px solid lime;
 }
 
 #sudoku-board tr td:nth-child(3n + 1) {
-    border-left: 4px solid #000;
+    border-left: 3px solid lime;
 }
 
 #sudoku-board tr:last-child td {
-    border-bottom: 4px solid #000;
+    border-bottom: 3px solid lime;
 }
 
 #sudoku-board tr td:last-child {
-    border-right: 4px solid #000;
+    border-right: 3px solid lime;
 }
 
 .input-error {
     border-color: red;
     background-color: #ffcccc; /* Light red background for error */
 }
+
+.gradient-background {
+    background: linear-gradient(300deg, #0e0805, #56752d, #e7ef72);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  
+  /* Reset some default styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  main{
+    background-color: #222;
+    color:lime;
+  }
+  
+  .fs{
+    padding-left: 50px;
+    padding-right: 50px;
+  
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: #336699;
+  }
+  
+  .nav-link {
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: #336699;
+  }
+  
+  .headerName {
+    font-size: 1.5rem;
+  }
+  
+  /* Main Content Styles */
+  .feature {
+    text-align: center;
+  }
+  
+  .feature h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .feature ul {
+    list-style: none;
+  }
+  
+  .feature ul li {
+    margin-bottom: 10px;
+  }
+  
+  .badge {
+    width: 100;
+    height: 30;
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
+  
+  
+  /* Optional: Add custom styles for visited and hover states */
+  a:hover {
+    color: lime;
+    /* Optional: Add other styles like color or background-color on hover */
+  }
+  
+  /* Footer Styles */
+  
+  .footerContent span {
+    font-size: 1rem;
+    color:white;
+  }
+  
+  /* Buttons Styles */
+  .btn-primary {
+    background-color: #336699;
+    border: none;
+  }
+  
+  .btn-outline-secondary {
+    border: 2px solid #336699;
+    color: #336699;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+    .navbar-brand {
+      margin-bottom: 10px;
+    }
+    .navbar-collapse {
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav-link {
+      margin: 5px;
+    }
+    .feature {
+      width: 100%;
+    }
+    #skill-sets.flex-column-sm {
+      flex-direction: row; /* Change to row for smaller screens */
+    }
+  
+    /* Adjust flex item styles for smaller screens */
+    #skill-sets.flex-column-sm > .badge {
+      margin-right: 8px;
+    }
+    .badge {
+      height: 30;
+      max-width: 100;
+      max-height: 100;
+    }
+  
+    .d-flex.justify-content-center {
+      flex-wrap: wrap;
+    }
+  }
+  }
+  
+  @media (max-width: 576px) {
+    .badge {
+      width: 40;
+      height: 30;
+      max-width: 80;
+      max-height: 80;
+    }
+  }
+  
+  .contentDetails {
+    width: 30%;
+  }
+  
+  
+  .footerC {
+    width: 100%;
+  }
+  
+  .footerContent {
+    justify-content: center;
+  }
+  
+  .headerName {
+    font-weight: bold;
+  }
+  
+  #bootStrapIcon {
+    transform: rotate(-30deg);
+    padding-bottom: 50px;
+  }
